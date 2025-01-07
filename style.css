@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+body h1{
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.welcome{
+    display: none;
+}
+
+.welcome input{
+    border: 2px solid yellow;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    margin-right: 2rem;
+}
+
+.welcome button{
+    background-color: yellow;
+    color: black;
+    padding: 8px 15px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+.welcome button:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    color: yellow;
+    border: 2px solid yellow;
+    box-shadow: 2px 2px 40px yellow;
+}
+
+.game{
+    display: block;
+}
+
+/* .game p{
+    font-size: 2rem;
+} */
+
+.currHand{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rgb(104, 168, 224); */
+}
+.result{
+    border: 2px solid yellow;
+}
+
+.emoji{
+    font-size: 200px;
+}
+
+
+
+
+
+
+
+.userInputButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.InputEmoji{
+    font-size: 5rem;
+    margin: 0 2rem;
+    cursor: pointer;
+}

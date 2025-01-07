@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>ROCK PAPER SCISSOR</h1>
-    <p>Playing Games is fun.</p>
+    <H1>Rock Paper Scissor</H1>
+    <div class="welcome">
+        <input type="text" placeholder="Enter your name: ">
+        <button >Start Game</button>
+    </div>
+    <div class="game">
+        <p>Welcome! <span id="userName">Sandip</span>.</p>
+        <div class="currHand">
+            <div class="result">
+                <h2>Sandip</h2>
+                <p id="emojiUser" class="emoji">&#x1F590</p>
+            </div>
+            <div class="result">
+                <h2>Computer</h2>
+                <p id="emojiComputer" class="emoji">&#x270C</p>
+            </div>
+        </div>
+        <div class="userInputButtons">
+            <p id="paper" class="InputEmoji" onclick="gamePlay(this)">&#x1F590</p>
+            <p id="scissor" class="InputEmoji" onclick="gamePlay(this)">&#x270C</p>
+            <p id="rock" class="InputEmoji" onclick="gamePlay(this)">&#x270A</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
+
 </html>
