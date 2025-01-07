@@ -55,18 +55,28 @@ body h1{
     display: block;
 }
 
-/* .game p{
+.greet{
     font-size: 2rem;
-} */
+    margin-bottom: 2rem;
+}
 
 .currHand{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* background-color: rgb(104, 168, 224); */
 }
+
 .result{
-    border: 2px solid yellow;
+    border: none;
+    background-color: rgb(14, 14, 14);
+    margin: 2rem;
+    padding: 20px;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 12px rgb(75, 75, 75);
 }
 
 .emoji{
@@ -83,6 +93,8 @@ body h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px grey;
 }
 
 .InputEmoji{
