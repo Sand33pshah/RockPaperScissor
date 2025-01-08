@@ -19,11 +19,11 @@
         <div class="currHand">
             <div class="result">
                 <h2><span id="nameUser"></span></h2>
-                <p id="emojiUser" class="emoji">&#x1F590</p>
+                <p id="emojiUser" class="emoji">&#63</p>
             </div>
             <div class="result">
                 <h2>Computer</h2>
-                <p id="emojiComputer" class="emoji">&#x270C</p>
+                <p id="emojiComputer" class="emoji">&#63</p>
             </div>
         </div>
         <div class="counters">
@@ -32,13 +32,17 @@
                 <h2>Computer: <span id="computerCount">0</span></h2>
             </div>
             <br>
-            <span id="resultMsg"></span>
+            <p>* * *&nbsp;&nbsp;&nbsp;&nbsp;<span id="resultMsg">Result</span>&nbsp;&nbsp;&nbsp;&nbsp;* * *</p>
         </div>
         <br>
         <div class="userInputButtons">
             <p id="paper" class="InputEmoji" onclick="gamePlay(this)">&#x1F590</p>
             <p id="scissor" class="InputEmoji" onclick="gamePlay(this)">&#x270C</p>
             <p id="rock" class="InputEmoji" onclick="gamePlay(this)">&#x270A</p>
+        </div>
+        <div class="navigation">
+            <button class="btn" onclick="goBack()">&#8592;</button>
+            <button class="btn" onclick="reset()">&#8635;</button>
         </div>
     </div>
 
