@@ -1,3 +1,7 @@
+let userCount;
+let computerCount;
+
+
 function gamePlay(element) {
     let userEmoji = element.innerHTML;
     let userChoice = '&#x' + userEmoji.codePointAt(0).toString(16);
@@ -20,7 +24,7 @@ function gamePlay(element) {
     document.getElementById('emojiComputer').innerHTML = computerChoice;
 
     let userCount = parseInt(document.getElementById('userCount').innerHTML);
-    let computerCount = parseInt(document.getElementById('userCount').innerHTML);
+    let computerCount = parseInt(document.getElementById('computerCount').innerHTML);
 
 
     if (userChoice === computerChoice) {
@@ -53,4 +57,18 @@ function startGame(){
     document.getElementsByClassName('welcome')[0].style.display = 'none';
     document.getElementsByClassName('game')[0].style.display = 'block';
 
+}
+
+function goBack() {
+    reset();
+    document.getElementsByClassName('welcome')[0].style.display = 'block';
+    document.getElementsByClassName('game')[0].style.display = 'none';
+}
+
+function reset(){
+    document.getElementById('emojiUser').innerHTML = '&#63';
+    document.getElementById('emojiComputer').innerHTML = '&#63';
+
+    document.getElementById('userCount').innerHTML = 0;
+    document.getElementById('computerCount').innerHTML = 0;
 }
