@@ -153,6 +153,10 @@ body h1 {
         font-size: 2rem;
     }
 
+    .welcome button{
+        margin-top: 1rem;
+    }
+
     .greet {
         font-size: 1rem;
     }
