@@ -11,14 +11,14 @@
 <body>
     <H1>Rock Paper Scissor</H1>
     <div class="welcome">
-        <input type="text" placeholder="Enter your name: ">
-        <button>Start Game</button>
+        <input type="text" placeholder="Enter your name: " id="userName">
+        <button onclick="startGame()">Start Game</button>
     </div>
     <div class="game">
-        <p class="greet">Welcome! <span id="userName">Sandip</span>.</p>
+        <p class="greet">Welcome! <span id="greetUser"></span></p>
         <div class="currHand">
             <div class="result">
-                <h2>Sandip</h2>
+                <h2><span id="nameUser"></span></h2>
                 <p id="emojiUser" class="emoji">&#x1F590</p>
             </div>
             <div class="result">
@@ -28,11 +28,11 @@
         </div>
         <div class="counters">
             <div>
-                <h2>Sandip: <span>0</span></h2>
-                <h2>Computer: <span>0</span></h2>
+                <h2><span id="nameCount"></span>: <span id="userCount">0</span></h2>
+                <h2>Computer: <span id="computerCount">0</span></h2>
             </div>
             <br>
-            <span>You win</span>
+            <span id="resultMsg"></span>
         </div>
         <br>
         <div class="userInputButtons">
