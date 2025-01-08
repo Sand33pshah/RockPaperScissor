@@ -2,41 +2,41 @@
 
 A simple, interactive Rock Paper Scissors game built using HTML, CSS, and JavaScript. This project provides an engaging way to play the classic game against a computer opponent.
 
-#Features
+# Features
 
-User Input: Users can input their name and see it displayed during gameplay.
+- User Input: Users can input their name and see it displayed during gameplay.
 
-Real-Time Gameplay: Choose between Rock, Paper, or Scissors and see results immediately.
+- Real-Time Gameplay: Choose between Rock, Paper, or Scissors and see results immediately.
 
-Score Tracking: Keeps track of scores for both the user and the computer.
+- Score Tracking: Keeps track of scores for both the user and the computer.
 
-Responsive UI: Designed to be user-friendly and visually appealing.
+- Responsive UI: Designed to be user-friendly and visually appealing.
 
-Game Controls: Options to restart or return to the welcome screen.
+- Game Controls: Options to restart or return to the welcome screen.
 
-#Technologies Used
+# Technologies Used
 
-HTML: Structure of the game interface.
+  HTML: Structure of the game interface.
 
-CSS: Styling for an engaging user experience.
+  CSS: Styling for an engaging user experience.
 
-JavaScript: Logic for gameplay and interactivity.
+  JavaScript: Logic for gameplay and interactivity.
 
-#How to Play
+# How to Play
 
-Enter your name on the welcome screen.
+1. Enter your name on the welcome screen.
 
-Click "Start Game" to begin.
+2. Click "Start Game" to begin.
 
-Choose your move by clicking on Rock (✊), Paper (🖐️), or Scissors (✌️).
+3. Choose your move by clicking on Rock (✊), Paper (🖐️), or Scissors (✌️).
 
-The computer will randomly select a move.
+4. The computer will randomly select a move.
 
-The result (Win, Lose, or Tie) will be displayed along with the updated scores.
+5. The result (Win, Lose, or Tie) will be displayed along with the updated scores.
 
-Use the navigation buttons to reset the game or go back to the welcome screen.
+6. Use the navigation buttons to reset the game or go back to the welcome screen.
 
-#Project Structure
+# Project Structure
 
 rock-paper-scissors/
 ├── index.html       # Main HTML file
@@ -44,14 +44,14 @@ rock-paper-scissors/
 ├── script.js        # JavaScript logic for the game
 └── README.md        # Project documentation
 
-#Setup and Installation
+# Setup and Installation
 
 Clone the repository:
 
-git clone https://github.com/your-username/rock-paper-scissors.git
+    git clone https://github.com/your-username/rock-paper-scissors.git
 
 Navigate to the project directory:
 
-cd rock-paper-scissors
+    cd rock-paper-scissors
 
 Open index.html in your web browser to play the game.
