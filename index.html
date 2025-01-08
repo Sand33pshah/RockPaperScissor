@@ -12,7 +12,7 @@
     <H1>Rock Paper Scissor</H1>
     <div class="welcome">
         <input type="text" placeholder="Enter your name: ">
-        <button >Start Game</button>
+        <button>Start Game</button>
     </div>
     <div class="game">
         <p class="greet">Welcome! <span id="userName">Sandip</span>.</p>
@@ -27,17 +27,21 @@
             </div>
         </div>
         <div class="counters">
-            <h2>Computer: <span>0</span></h2>
-            <h2>Sandip: <span>0</span></h2>
+            <div>
+                <h2>Sandip: <span>0</span></h2>
+                <h2>Computer: <span>0</span></h2>
+            </div>
+            <br>
             <span>You win</span>
         </div>
+        <br>
         <div class="userInputButtons">
             <p id="paper" class="InputEmoji" onclick="gamePlay(this)">&#x1F590</p>
             <p id="scissor" class="InputEmoji" onclick="gamePlay(this)">&#x270C</p>
             <p id="rock" class="InputEmoji" onclick="gamePlay(this)">&#x270A</p>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 
