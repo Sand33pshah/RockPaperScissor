@@ -1,27 +1,33 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: black;
     color: white;
-    height: 100vh;
-}
-body h1{
-    margin-bottom: 3rem;
-    font-size: 4rem;
+    min-height: 100vh;
+    padding: 1rem;
 }
 
-.welcome{
+body h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.welcome {
     display: block;
+    align-items: center;
 }
 
-.welcome input{
+.welcome input {
+    width: 65%;
     border: 2px solid yellow;
     border-radius: 8px;
     padding: 8px;
@@ -29,14 +35,14 @@ body h1{
     background-color: transparent;
     color: white;
     outline: none;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
-.welcome button{
+.welcome button {
     background-color: yellow;
     color: black;
-    padding: 8px 15px;
-    font-size: 1.5em;
+    padding: 10px 5px;
+    font-size: 1.2rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -51,29 +57,28 @@ body h1{
     box-shadow: 2px 2px 40px yellow;
 }
 
-.game{
+.game {
     display: none;
 }
 
-.greet{
+.greet {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
-.currHand{
+.currHand {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.result{
-    width: 300px;
-    height: 350px;
+.result {
+    width: 20rem;
     border: none;
     background-color: rgb(14, 14, 14);
-    margin: 2rem;
+    margin: 1rem;
     padding: 20px;
-    border-radius:15px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,35 +86,30 @@ body h1{
     box-shadow: 2px 2px 12px rgb(75, 75, 75);
 }
 
-.emoji{
+.emoji {
     font-size: 200px;
 }
 
-.counters{
+.counters {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.counters div{
+.counters div {
     width: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.counters span{
+.counters span {
     color: yellow;
     font-size: 1.5rem;
 }
 
-
-
-
-
-.userInputButtons{
-    /* width: 80%; */
+.userInputButtons {
     background-color: rgb(14, 14, 14);
     display: flex;
     align-items: center;
@@ -118,7 +118,7 @@ body h1{
     box-shadow: 2px 2px 12px grey;
 }
 
-.InputEmoji{
+.InputEmoji {
     font-size: 5rem;
     margin: 1rem 1.5rem;
     cursor: pointer;
@@ -126,15 +126,17 @@ body h1{
 }
 
 .InputEmoji:hover {
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
-.navigation{
+
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
 }
-.btn{
+
+.btn {
     margin-top: 2rem;
     background-color: yellow;
     font-size: 2rem;
@@ -143,4 +145,55 @@ body h1{
     height: 70px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body h1 {
+        font-size: 2rem;
+    }
+
+    .greet {
+        font-size: 1rem;
+    }
+
+    .currHand {
+        flex-direction: column;
+    }
+
+    .emoji {
+        font-size: 100px;
+    }
+
+    /* .counters span {
+        font-size: 1rem;
+    } */
+
+    .InputEmoji {
+        font-size: 3rem;
+    }
+
+    .btn {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body h1 {
+        font-size: 1.5rem;
+    }
+
+    .result {
+        padding: 10px;
+    }
+
+    .emoji {
+        font-size: 70px;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
 }

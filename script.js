@@ -1,5 +1,6 @@
 let userCount;
 let computerCount;
+let userName;
 
 
 function gamePlay(element) {
@@ -37,7 +38,7 @@ function gamePlay(element) {
         } else if (computerChoice === '&#x1f590' && userChoice == '&#x270c' || computerChoice === '&#x270a' && userChoice == '&#x1f590' || computerChoice === '&#x270c' && userChoice == '&#x270a') {
             userCount++;
             document.getElementById('userCount').innerHTML = userCount;
-            document.getElementById('resultMsg').innerHTML = 'User Wins';
+            document.getElementById('resultMsg').innerHTML = `${userName} Wins`;
         }
     }
 
@@ -47,7 +48,7 @@ function gamePlay(element) {
 }
 
 function startGame(){
-    const userName = document.getElementById('userName').value;
+    userName = document.getElementById('userName').value;
 
     document.getElementById('greetUser').innerHTML = userName;
     document.getElementById('nameUser').innerHTML = userName;
